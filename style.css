@@ -113,7 +113,9 @@ END Glitch hello-app default styles
 
 body {
   font-family: HK Grotesk;
-  background-color: var(--color-bg);
+  /* 背景图 */
+  background: url("https://i.pinimg.com/1200x/6b/ea/12/6bea12ee9c7b069e8bdcf74726fdd299.jpg")no-repeat center center fixed;
+  background-size: cover;
 }
 
 /* Page structure */
