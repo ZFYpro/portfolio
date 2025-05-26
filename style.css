@@ -134,17 +134,18 @@ body {
 .image-container {
   position: relative;
   width: 100%;
-  height: 300px; /* 你可以根据需要设置画布高度 */
+  height: 400px; /* 你可以根据需要设置画布高度 */
 
 }
 
 .positioned-image {
   position: absolute;
-  top: 50%; /* 垂直居中 */
-  transform: translate(-50%, -50%); /* 图片中心点对齐位置 */
-  width: 80px; /* 根据需要设置图片大小 */
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
   height: auto;
 }
+
 
 
 /* Very light scaling for our illustration */
