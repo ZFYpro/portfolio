@@ -122,7 +122,7 @@ body {
 .wrapper {
   min-height: var(--wrapper-height);
   display: grid;
-  place-items: center;
+  place-items: left;
   margin: 0 1rem;
 }
 .content {
@@ -165,13 +165,14 @@ body {
   font-family: 'Press Start 2P', monospace;
   font-size: 10px;
   line-height: 1.6;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 3px 3px 0px #333;
   z-index: 100;
 }
 
 
 
 .icon {
+
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -184,16 +185,17 @@ body {
 
 
 .icon p {
+
   font-family: 'Press Start 2P', monospace;
   font-size: 8px;
   color: black;
-  margin-top: 3px;
-  line-height: 1.2;
+  margin-top: 5px;
+  line-height: 1.5;
 }
 
 
 .icon:hover {
-  transform: translate(-50%, -50%) scale(1.1); /* 鼠标悬停时放大1.1倍 */
+  transform: translate(-50%, -50%) scale(1.2); /* 鼠标悬停时放大1.1倍 */
 }
 
 
