@@ -139,14 +139,16 @@ body {
 
 }
 
+/* 原本图标样式 */
 .positioned-image {
-  position: relative;
-  top: 50%;
-  left: 0;
- transform: translateX(-50%); /* 垂直方向居中 */
-  width: 130px;
-  height: auto;
+  width: 70px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  transform-origin: center;
+  /* ❌ 移除这句 */
+  /* transform: translate(-50%, -50%); */
 }
+
 
 
 .sticker {
@@ -167,18 +169,31 @@ body {
   z-index: 100;
 }
 
-.positioned-image {
-  position: relative;
-  width: 70px;
-  transition: transform 0.3s ease;
-  cursor: pointer;
-  transform-origin: center;
+
+
+.icon {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100px;
+  /* ✅ 新增：用于定位整个图标组件（图+文字） */
   transform: translate(-50%, -50%);
 }
 
 
-.positioned-image:hover {
-  transform: translate(-50%, -50%) scale(1.2); /* 鼠标悬停时放大1.1倍 */
+.icon p {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 8px;
+  color: black;
+  margin-top: 3px;
+  line-height: 1.2;
+}
+
+
+.icon:hover {
+  transform: translate(-50%, -50%) scale(1.1); /* 鼠标悬停时放大1.1倍 */
 }
 
 
