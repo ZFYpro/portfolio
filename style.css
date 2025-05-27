@@ -148,6 +148,24 @@ body {
 }
 
 
+.sticker {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 240px;
+  padding: 12px;
+  background: repeating-linear-gradient(
+    #ffe8a1 8px,
+    #ffe8a1 16px
+  );
+  border: 2px #ffa500;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  line-height: 1.6;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
 
 /* Very light scaling for our illustration */
 .title {
