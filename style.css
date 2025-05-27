@@ -168,12 +168,17 @@ body {
 }
 
 .positioned-image {
-  transition: transform 0.3s ease; /* 平滑动画 */
-  cursor: pointer;                /* 鼠标变小手 */
+  position: relative;
+  width: 70px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  transform-origin: center;
+  transform: translate(-50%, -50%);
 }
 
+
 .positioned-image:hover {
-  transform: scale(1.1); /* 鼠标悬停时放大1.1倍 */
+  transform: translate(-50%, -50%) scale(1.2); /* 鼠标悬停时放大1.1倍 */
 }
 
 
