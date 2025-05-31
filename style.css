@@ -15,19 +15,21 @@ to this section's matching END comment to see page-specific styles.
 */
 
 /* Our default values set as CSS variables */
+/* 全局默认样式变量 */
 :root {
-  --color-bg: #69F7BE;
-  --color-text-main: #000000;
-  --color-text-header: #2800FF;
-  --color-primary: #FFFF00;
-  --wrapper-height: 87vh;
-  --image-max-width: 300px;
-  --image-margin: 3rem;
+  --color-bg: #69F7BE;/* 背景色 */
+  --color-text-main: #000000;/* 主文字颜色 */
+  --color-text-header: #2800FF;/* 标题文字颜色 */
+  --color-primary: #FFFF00;/* 主按钮/高亮颜色 */
+  --wrapper-height: 87vh;/* 主内容区高度 */
+  --image-max-width: 300px;/* 图片最大宽度 */
+  --image-margin: 3rem;/* 图片间距 */
   --font-family: "HK Grotesk";
   --font-family-header: "HK Grotesk";
 }
 
 /* Basic page style resets */
+/* 盒模型重设 */
 * {
   box-sizing: border-box;
 }
@@ -75,6 +77,7 @@ to this section's matching END comment to see page-specific styles.
 }
 
 /* Navigation grid */
+/* 页脚导航区域样式 */
 .footer {
   display: flex;
   justify-content: space-between;
@@ -110,7 +113,7 @@ a:not(.btn--remix):visited {
 /******************************************************************************
 END Glitch hello-app default styles
 ******************************************************************************/
-
+/* 页面背景和结构布局 */
 body {
   font-family: HK Grotesk;
   /* 背景图 */
@@ -139,7 +142,7 @@ body {
 
 }
 
-/* 原本图标样式 */
+/* 图标图片样式 */
 .positioned-image {
   width: 70px;
   transition: transform 0.3s ease;
@@ -150,7 +153,7 @@ body {
 }
 
 
-
+/* 像素风贴纸样式 */
 .sticker {
   position: absolute;
   top: 20px;
@@ -170,7 +173,7 @@ body {
 }
 
 
-
+/* 图标容器：图片 + 文字 */
 .icon {
 
   position: absolute;
@@ -193,13 +196,14 @@ body {
   line-height: 1.5;
 }
 
-
+/* 悬停放大效果 */
 .icon:hover {
   transform: translate(-50%, -50%) scale(1.2); /* 鼠标悬停时放大1.1倍 */
 }
 
 
 /* Very light scaling for our illustration */
+/* 大标题样式 */
 .title {
   color: var(--color-text-header);
   font-family: HK Grotesk;
@@ -249,6 +253,8 @@ h2 {
 - Toggling this class on and off will move it down and up again
 - The button transition property above determines the speed of the translate (500ms)
 */
+/* .dipped 是一个自定义类名，通常通过 JavaScript 加到按钮或图标上，模拟按下效果（像按钮被“按下去”） */
+/*transform: translateY(5px);：是一个 CSS 2D 变换，让元素在 **Y 轴方向（垂直）**向下偏移 5px。*/
 .dipped {
   transform: translateY(5px);
 }
