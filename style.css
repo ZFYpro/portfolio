@@ -169,7 +169,7 @@ body {
   position: fixed;
   top: 0; left: 0;
   width: 100vw; height: 100vh;
-  background-color: rgba(0,0,0,0.6); /* 黑色半透明背景 */
+  background-color: rgba(0,100,160,0.4); /* 黑色半透明背景 */
   z-index: 999;
 }
 
@@ -179,15 +179,23 @@ body {
   width: 80%;
   max-width: 400px;
   margin: 10% auto;
-  border-radius: 12px; /* 圆角半径 */
-  box-shadow: 3px 3px 0px #382B49;
-  border: 2px solid black; /* 保留像素风边框感 */
+  border-radius: 6px; /* 圆角半径 */
+  box-shadow: 3px 3px 0px #3F3E68;
+  border: 2px solid #3F3E68; /* 保留像素风边框感 */
 }
 
 .close {
   float: right;
-  cursor: pointer;
   font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 2px 8px;
+  margin: 5px;
+  background-color: #eee;
+  border: 2px solid #3F3E68;
+  box-shadow: 2px 2px 0 #3F3E68;
+  font-family: 'Pixelify Sans', monospace;
+  transition: all 0.1s ease-in-out;
 }
 
 
