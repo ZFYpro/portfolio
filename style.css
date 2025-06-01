@@ -163,6 +163,32 @@ body {
   margin: 0;
 }
 
+/*弹窗效果*/
+.modal {
+  display: none; /* 默认隐藏 */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-color: rgba(0,0,0,0.6); /* 黑色半透明背景 */
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  margin: 10% auto;
+  box-shadow: 6px 6px 0 #000;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
 /* Very light scaling for our illustration */
 .illustration {
   max-width: 100%;
