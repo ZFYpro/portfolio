@@ -23,8 +23,8 @@ to this section's matching END comment to see page-specific styles.
   --wrapper-height: 87vh; /* 主内容区高度 */
   --image-max-width: 300px; /* 图片最大宽度 */
   --image-margin: 3rem; /* 图片间距 */
-  --font-family: "HK Grotesk";
-  --font-family-header: "HK Grotesk";
+  --font-family: "Noto Sans SC";
+  --font-family-header: "Noto Sans SC";
 }
 
 /* Basic page style resets */
@@ -39,7 +39,7 @@ to this section's matching END comment to see page-specific styles.
 
 /* Our remix on glitch button */
 .btn--remix {
-  font-family: HK Grotesk;
+  font-family:"Noto Sans SC", sans-serif;
   padding: 0.75rem 1rem;
   font-size: 1.1rem;
   line-height: 1rem;
@@ -73,7 +73,7 @@ END Glitch hello-app default styles
 ******************************************************************************/
 /* 页面背景和结构布局 */
 body {
-  font-family: HK Grotesk;
+  font-family: "Noto Sans SC", sans-serif;
   /* 背景图 */
   background: url("https://i.pinimg.com/736x/b0/2c/ba/b02cba2331900c218b790c3e6ba8caf2.jpg")
     no-repeat center center fixed;
@@ -155,7 +155,7 @@ body {
 /* 大标题样式 */
 .title {
   color: var(--color-text-header);
-  font-family: HK Grotesk;
+  font-family: "Noto Sans SC", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 100px;
@@ -236,8 +236,10 @@ input {
 
 /* Subheading */
 h2 {
-  color: var(--color-text-header);
+  color:black;
 }
+
+
 
 /* Interactive image */
 .illustration:active {
