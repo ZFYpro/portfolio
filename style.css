@@ -158,8 +158,8 @@ body {
   padding: 12px;
   background: repeating-linear-gradient(#ffe8a1 8px, #ffe8a1 16px);
   border: 2px #ffa500;
-  font-family: "Press Start 2P", monospace;
-  font-size: 10px;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 15px;
   line-height: 1.6;
   box-shadow: 3px 3px 0px #333;
   z-index: 100;
@@ -167,7 +167,7 @@ body {
 
 /* 图标容器：图片 + 文字 */
 .icon {
-  background-color: rgba(255, 0, 0, 0.3); /* 半透明红色，仅调试用 */
+  /* background-color: rgba(255, 0, 0, 0.3); /* 半透明红色，仅调试用 */
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -179,8 +179,8 @@ body {
 }
 
 .icon p {
-  font-family: "Press Start 2P", monospace;
-  font-size: 8px;
+  font-family: "Pixelify Sans", monospace;
+  font-size: 12px;
   color: black;
   margin-top: 5px;
   line-height: 1.5;
