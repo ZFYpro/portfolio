@@ -108,6 +108,24 @@ body {
   transform-origin: center;
 }
 
+h2 {
+  color:black;
+  font-size: 42px;
+  color:#382B49;
+  margin-top: 5px;
+  margin-bottom: 10px; /* 控制标题下方的空隙 */
+ 
+}
+
+p {
+  color:black;
+  font-size: 14.5 px;
+  color:#382B49;
+  line-height: 1.7;
+  margin-top: 0px; /* 减少段落与标题之间的距离 */
+}
+
+
 /* 像素风贴纸样式 */
 .sticker {
   position: absolute;
@@ -137,6 +155,7 @@ body {
   /* ✅ 新增：用于定位整个图标组件（图+文字） */
   transform: translate(-50%, -50%);
 }
+
 
 .icon p {
   font-family: "Pixelify Sans", monospace;
@@ -235,9 +254,8 @@ input {
 }
 
 /* Subheading */
-h2 {
-  color:black;
-}
+
+
 
 
 
