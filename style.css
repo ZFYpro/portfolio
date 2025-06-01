@@ -177,12 +177,22 @@ body {
   background: white;
   padding: 20px;
   width: 80%;
-  max-width: 400px;
+  max-width: 700px;
+  max-height: 70vh;       /* 限制最大高度为视口高度的 80% */
+  overflow-y: auto;       /* 垂直方向添加滚动条 */
   margin: 10% auto;
   border-radius: 6px; /* 圆角半径 */
   box-shadow: 3px 3px 0px #3F3E68;
   border: 2px solid #3F3E68; /* 保留像素风边框感 */
+  
 }
+
+.video {
+  display: block;
+  width: 100%;
+  margin-bottom: 50px;  /* 每段视频底部留白 */
+}
+
 
 .close {
   float: right;
