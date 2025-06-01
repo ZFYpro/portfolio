@@ -156,12 +156,13 @@ body {
   right: 20px;
   width: 240px;
   padding: 12px;
-  background: repeating-linear-gradient(#ffe8a1 8px, #ffe8a1 16px);
+  background: repeating-linear-gradient(#F7E1B4 8px, #F7E1B4 16px);
   border: 2px #ffa500;
   font-family: "Pixelify Sans", sans-serif;
   font-size: 15px;
+  color:#382B49;
   line-height: 1.6;
-  box-shadow: 3px 3px 0px #333;
+  box-shadow: 3px 3px 0px #382B49;
   z-index: 100;
 }
 
@@ -181,7 +182,7 @@ body {
 .icon p {
   font-family: "Pixelify Sans", monospace;
   font-size: 12px;
-  color: black;
+  color:#382B49;
   margin-top: 5px;
   line-height: 1.5;
 }
