@@ -159,10 +159,10 @@ p {
 
 .icon p {
   font-family: "Pixelify Sans", monospace;
-  font-size: 12px;
+  font-size: 13px;
   color:#382B49;
   margin-top: 5px;
-  line-height: 1.5;
+  line-height: 1;
 }
 
 /* 悬停放大效果 */
