@@ -102,7 +102,7 @@ body {
 
 /* 图标图片样式 */
 .positioned-image {
-  width: 80px;
+  width: 70px;
   transition: transform 0.3s ease;
   cursor: pointer;
   transform-origin: center;
