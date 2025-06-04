@@ -43,13 +43,23 @@ function closeModal() {
 }
 
 
+//声音
 window.addEventListener('DOMContentLoaded', () => {
+  const hoverSound = document.getElementById('hoverSound');
   const clickSound = document.getElementById('clickSound');
 
   document.querySelectorAll('.icon').forEach(icon => {
+    
+    // 点击音效
     icon.addEventListener('click', () => {
       clickSound.currentTime = 0;
       clickSound.play();
+    });
+
+    // 悬停音效
+    icon.addEventListener('mouseenter', () => {
+      hoverSound.currentTime = 0;
+      hoverSound.play();
     });
   });
 });

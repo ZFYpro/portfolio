@@ -10,16 +10,26 @@
     <!-- 🔸 设置响应式页面，确保在手机等设备上正常显示 -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- 给网站添加小图标 -->
-    <link rel="icon" href="https://cdn.glitch.global/86d0d175-6ecd-478c-90a6-ab00dec995c0/portrait2.png?1748801459111" />
-    
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/86d0d175-6ecd-478c-90a6-ab00dec995c0/portrait2.png?1748801459111"
+    />
+
     <!-- 字体-->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap"
+      rel="stylesheet"
+    />
     <style>
-    body {
-      font-family: "Noto Sans SC", sans-serif;
-    }
-  </style><!--
+      body {
+        font-family: "Noto Sans SC", sans-serif;
+      }
+    </style>
+    <!--
       This is the page head - it contains info the browser uses
       Like the title, which appears on the browser tab but not inside the page
       Further down you'll see the content that displays in the page
@@ -32,13 +42,8 @@
     <!-- The website JavaScript file  实现互动功能 -->
     <script src="/script.js" defer></script>
   </head>
-  
-  
-  
-  
-  
+
   <body>
-    
     <!--
       The body includes the content you see in the page
       Each element is defined using tags, like this <div></div>
@@ -48,72 +53,106 @@
     <div class="wrapper">
       <div class="content" role="main">
         <div class="image-container">
-          
-  <a href="https://cdn.glitch.global/86d0d175-6ecd-478c-90a6-ab00dec995c0/CV.pdf?v=1748807560675" target="blank">
-  <div class="icon" style="top:10%; left: 10%;">
-  <img src="https://cdn.glitch.global/86d0d175-6ecd-478c-90a6-ab00dec995c0/portrait.png?v=1748913865004" class="positioned-image"  />
-  <p>CV </p>
-  </div>
-  </a>       
-  
-          <a href="https://cdn.glitch.global/86d0d175-6ecd-478c-90a6-ab00dec995c0/commercial-project.pdf?v=1749038776706" target="blank">
-  <div class="icon" style="top:35%; left: 10%;">
-  <img src="https://cdn.glitch.global/86d0d175-6ecd-478c-90a6-ab00dec995c0/comercial300.png?v=1749041919509" class="positioned-image"  />
-   <p>Commercial Projects</p>
+          <a
+            href="https://cdn.glitch.global/86d0d175-6ecd-478c-90a6-ab00dec995c0/CV.pdf?v=1748807560675"
+            target="blank"
+          >
+            <div class="icon" style="top: 10%; left: 10%">
+              <img
+                src="https://cdn.glitch.global/86d0d175-6ecd-478c-90a6-ab00dec995c0/portrait.png?v=1748913865004"
+                class="positioned-image"
+              />
+              <p>CV</p>
+            </div>
+          </a>
+
+          <a
+            href="https://cdn.glitch.global/86d0d175-6ecd-478c-90a6-ab00dec995c0/commercial-project.pdf?v=1749038776706"
+            target="blank"
+          >
+            <div class="icon" style="top: 35%; left: 10%">
+              <img
+                src="https://cdn.glitch.global/86d0d175-6ecd-478c-90a6-ab00dec995c0/comercial300.png?v=1749041919509"
+                class="positioned-image"
+              />
+              <p>Commercial Projects</p>
+            </div>
+          </a>
+
+          <div class="icon" style="top: 85%; left: 10%" onclick="openModal()">
+            <img
+              src="https://cdn.glitch.global/86d0d175-6ecd-478c-90a6-ab00dec995c0/computer%E5%89%AF%E6%9C%AC.png?v=1749050576015"
+              class="positioned-image"
+            />
+            <p>Computational Art</p>
           </div>
-     </a>
-          
-  <div class="icon" style="top:85%; left: 10%; " onclick="openModal()" >
-  <img src="https://cdn.glitch.global/86d0d175-6ecd-478c-90a6-ab00dec995c0/computer%E5%89%AF%E6%9C%AC.png?v=1749050576015" class="positioned-image" />
-  <p>Computational Art</p>
-  </div>
-          
-          <!-- 弹窗本体 -->    
-         
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">⨉</span>
-      <h2>Mouthfeel Poems</h2>
-        <p>
-           This is a text-generative Chinese poetry project, trained on 500 Chinese poems in the form of mouthfeel words, aiming to explore the potential connections between sound, words, and meaning.
-        </p>
-        <iframe class="video" title="vimeo-player" src="https://player.vimeo.com/video/1082229314?h=5c58d18f64" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
-        <h2>Meaning Collage</h2>
-        <p>
-          Meaning Collage is an interactive digital installation that invites users to explore the boundaries of language meaning construction through playful engagement.
-        </p>
-      <iframe class="video" title="vimeo-player" src="https://player.vimeo.com/video/1082706151?h=303b062520" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
 
-    </div>
-    
-    
+          <!-- 弹窗本体 -->
+
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal()">⨉</span>
+              <h2>Mouthfeel Poems</h2>
+              <p>
+                This is a text-generative Chinese poetry project, trained on 500
+                Chinese poems in the form of mouthfeel words, aiming to explore
+                the potential connections between sound, words, and meaning.
+              </p>
+              <iframe
+                class="video"
+                title="vimeo-player"
+                src="https://player.vimeo.com/video/1082229314?h=5c58d18f64"
+                width="640"
+                height="360"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <h2>Meaning Collage</h2>
+              <p>
+                Meaning Collage is an interactive digital installation that
+                invites users to explore the boundaries of language meaning
+                construction through playful engagement.
+              </p>
+              <iframe
+                class="video"
+                title="vimeo-player"
+                src="https://player.vimeo.com/video/1082706151?h=303b062520"
+                width="640"
+                height="360"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
-  <div class="icon" style="top:60%; left: 10%;">  
-  <img src="https://cdn.glitch.global/86d0d175-6ecd-478c-90a6-ab00dec995c0/heart%20pixel300.png?v=1749049216515" class="positioned-image" />
-  <p> Non-commercial Projects</p>
-  </div>    
-      
-          <div class="icon" style="top:110%; left: 10%;"> 
-    <img src="https://cdn.glitch.global/86d0d175-6ecd-478c-90a6-ab00dec995c0/computer%E5%89%AF%E6%9C%AC.png?v=1749050576015" class="positioned-image"  />
-  <p>TBC</p>
-      </div>    
-  
-  </div>
+          <div class="icon" style="top: 60%; left: 10%">
+            <img
+              src="https://cdn.glitch.global/86d0d175-6ecd-478c-90a6-ab00dec995c0/heart%20pixel300.png?v=1749049216515"
+              class="positioned-image"
+            />
+            <p>Non-commercial Projects</p>
+          </div>
 
-    <div class="sticker">
-  <strong>How to use:</strong><br>
-  Click icons to open.<br>
-  Click x to close.<br>
-  Enjoy :)
-</div>
+          <div class="icon" style="top: 110%; left: 10%">
+            <img
+              src="https://cdn.glitch.global/86d0d175-6ecd-478c-90a6-ab00dec995c0/computer%E5%89%AF%E6%9C%AC.png?v=1749050576015"
+              class="positioned-image"
+            />
+            <p>TBC</p>
+          </div>
+        </div>
 
-        <h1 class="title"> </h1>
+        <div class="sticker">
+          <strong>How to use:</strong><br />
+          Click icons to open.<br />
+          Click x to close.<br />
+          Enjoy :)
+        </div>
+
+        <h1 class="title"></h1>
 
         <div class="instructions">
-          <h2> </h2>
-          <p>
-            
-          </p>
+          <h2></h2>
+          <p></p>
           <!--  🚧 TODO: ADD BUTTON HERE -->
 
           <!-- Once you've added the button from TODO.md, click it in the page -->
@@ -122,11 +161,16 @@
       </div>
     </div>
     <!-- sound ✂ -->
-    <audio id="hoverSound" src="hover.mp3" preload="auto"></audio>
+    <audio
+      id="hoverSound"
+      src="https://cdn.glitch.global/86d0d175-6ecd-478c-90a6-ab00dec995c0/hover2.wav?v=1749062362323"
+      preload="auto"
+    ></audio>
 
-    
-    <audio id="clickSound" src="https://cdn.glitch.global/86d0d175-6ecd-478c-90a6-ab00dec995c0/click.mp3?v=1749061933685" preload="auto"></audio>
-
-
+    <audio
+      id="clickSound"
+      src="https://cdn.glitch.global/86d0d175-6ecd-478c-90a6-ab00dec995c0/cupboardlatchclick.wav?v=1749062673151"
+      preload="auto"
+    ></audio>
   </body>
 </html>
