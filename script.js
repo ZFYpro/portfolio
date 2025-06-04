@@ -41,3 +41,15 @@ function openModal() {
 function closeModal() {
   document.getElementById("modal").style.display = "none";
 }
+
+
+window.addEventListener('DOMContentLoaded', () => {
+  const clickSound = document.getElementById('clickSound');
+
+  document.querySelectorAll('.icon').forEach(icon => {
+    icon.addEventListener('click', () => {
+      clickSound.currentTime = 0;
+      clickSound.play();
+    });
+  });
+});
