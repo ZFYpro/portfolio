@@ -63,3 +63,16 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+
+document.querySelectorAll('a .icon').forEach(icon => {
+  icon.addEventListener('click', e => {
+    e.preventDefault(); // 阻止立即跳转
+    const link = icon.parentElement.href;
+
+    setTimeout(() => {
+      window.open(link, '_blank'); // 在新标签页打开
+    }, 500);
+  });
+});
