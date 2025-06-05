@@ -126,26 +126,60 @@
           </div>
           
           <a href="https://cdn.glitch.me/86d0d175-6ecd-478c-90a6-ab00dec995c0/non-commercial.pdf?v=1749080775422" target="blank">
-          <div class="icon" style="top: 60%; left: 10%">
+          <div class="icon" style="top: 60%; left: 10%" >
            
             <img
               src="https://cdn.glitch.global/86d0d175-6ecd-478c-90a6-ab00dec995c0/heart%20pixel300.png?v=1749049216515"
               class="positioned-image"
             /> 
             <p>Non-commercial Projects</p>
+            
+            
               
           </div>
              </a>
 
-          <div class="icon" style="top: 110%; left: 10%">
+          <div class="icon" style="top: 110%; left: 10%" onclick="openModal()">
             <img
-              src="https://cdn.glitch.global/86d0d175-6ecd-478c-90a6-ab00dec995c0/computer%E5%89%AF%E6%9C%AC.png?v=1749050576015"
+              src="https://cdn.glitch.global/86d0d175-6ecd-478c-90a6-ab00dec995c0/game.png?v=1749121205129"
               class="positioned-image"
             />
             <p>TBC</p>
           </div>
         </div>
 
+        <div id="gameHubModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeGameHub()">⨉</span>
+    <h2>🎮 Pixel Game Room</h2>
+
+    <div class="game-icon-grid">
+      <div class="game-icon" onclick="openMiniGame('poem')">
+        <img src="poem-icon.png" />
+        <p>Poem Collage</p>
+      </div>
+      <div class="game-icon" onclick="openMiniGame('glitch')">
+        <img src="glitch-icon.png" />
+        <p>Glitch Test</p>
+      </div>
+      <div class="game-icon" onclick="openMiniGame('language')">
+        <img src="lang-icon.png" />
+        <p>Language Puzzle</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+        
+        <div id="miniGameModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeMiniGame()">⨉</span>
+    <iframe id="gameFrame" width="700" height="500"></iframe>
+  </div>
+</div>
+
+
+        
  
 
         <h1 class="title"></h1>

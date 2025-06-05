@@ -281,3 +281,27 @@ input {
 .fileopener:hover {
   border-bottom: 3px solid var(--color-secondary);
 }
+
+
+.game-icon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.game-icon {
+  width: 120px;
+  text-align: center;
+  cursor: pointer;
+}
+.game-icon img {
+  width: 70px;
+  margin-bottom: 10px;
+}
+.game-icon p {
+  font-family: "Pixelify Sans", monospace;
+  font-size: 14px;
+  color: #382B49;
+}
+
