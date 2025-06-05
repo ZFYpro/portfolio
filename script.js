@@ -78,7 +78,7 @@ document.querySelectorAll('a .icon').forEach(icon => {
 
     setTimeout(() => {
       window.open(link, '_blank'); // 在新标签页打开
-    }, 200);
+    }, 150);
   });
 });
 
