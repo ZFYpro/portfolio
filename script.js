@@ -39,8 +39,13 @@ function openModal() {
 }
 
 function closeModal() {
+  const clickSound = document.getElementById("clickSound"); // 获取音效
+  clickSound.currentTime = 0;
+  clickSound.play(); // 播放点击音
+
   document.getElementById("modal").style.display = "none";
 }
+
 
 
 //声音
@@ -73,6 +78,6 @@ document.querySelectorAll('a .icon').forEach(icon => {
 
     setTimeout(() => {
       window.open(link, '_blank'); // 在新标签页打开
-    }, 600);
+    }, 200);
   });
 });
