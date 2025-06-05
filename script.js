@@ -93,15 +93,13 @@ function closeGameHub() {
 
 function openMiniGame(key) {
   const urls = {
-    poem: "https://editor.p5js.org/ZFYpro/full/85Z_h0OIR",
-    glitch: "https://your-glitch-game-url.com",
-    language: "https://your-language-game-url.com"
+    collageLanguage: "https://editor.p5js.org/ZFYpro/full/85Z_h0OIR",
+    glitch: "https://your-glitch-url.com",
+    language: "https://your-language-url.com"
   };
-  document.getElementById("gameFrame").src = urls[key];
-  document.getElementById("miniGameModal").style.display = "block";
-}
-function closeMiniGame() {
-  document.getElementById("miniGameModal").style.display = "none";
-  document.getElementById("gameFrame").src = "";
+  const url = urls[key];
+  if (url) {
+    window.open(url, '_blank'); // 在新标签页打开链接
+  }
 }
 
