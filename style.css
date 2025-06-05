@@ -195,8 +195,8 @@ p {
 .modal-content {
   background: white;
   padding: 20px;
-  width: 80%;
-  max-width: 700px;
+  width: 90%;
+  max-width: 900px;
   max-height: 70vh;       /* 限制最大高度为视口高度的 80% */
   overflow-y: auto;       /* 垂直方向添加滚动条 */
   margin: 10% auto;
