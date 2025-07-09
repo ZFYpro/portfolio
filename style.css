@@ -75,7 +75,7 @@ END Glitch hello-app default styles
 body {
   font-family: "Noto Sans SC", sans-serif;
   /* 背景图 */
-  background: url("https://raw.githubusercontent.com/ZFYpro/portfolio/refs/heads/main/image/background.png")
+  background: url("https://github.com/ZFYpro/portfolio/blob/main/image/background2.png?raw=true")
 
     no-repeat center center fixed;
   background-size: cover;
